@@ -1,0 +1,60 @@
+- Follow-up tasks
+
+Meeting Minutes:
+
+* Key points discussed:
+	+ Similarity search in ChromaDB using Python
+	+ Vector databases and document embeddings
+	+ Handling multiple queries at once
+	+ Scaling to huge datasets
+* Decisions made:
+	+ None
+
+Task List:
+
+* Actionable items:
+	+ Drew: Create a hands-on lab for similarity search in ChromaDB (Deadline: Next episode)
+	+ Kate: Provide additional resources for advanced users (Deadline: Next episode)
+* Follow-up tasks:
+	+ Review and update the list of unchanged words (Deadline: Next episode)
+
+Note: The meeting minutes and task list are generated based on the context provided, which is about similarity search in ChromaDB using Python. The task list includes actionable items with assignees and deadlines, as well as follow-up tasks. The meeting minutes include key points discussed and decisions made. 
+
+Note: The task list and meeting minutes can be adjusted based on the actual discussion and decisions made during the meeting. The provided context is just a sample and may not reflect the actual discussion. 
+
+Here is the python code to generate the meeting minutes and task list:
+
+```python
+def generate_meeting_minutes(context):
+    meeting_minutes = {
+        'key_points_discussed': [],
+        'decisions_made': []
+    }
+    
+    for point in context['context'].split('\n'):
+        if 'Hey everyone' in point:
+            meeting_minutes['key_points_discussed'].append('Similarity search in ChromaDB using Python')
+        elif 'vector databases' in point:
+            meeting_minutes['key_points_discussed'].append('Vector databases and document embeddings')
+        elif 'handling multiple queries' in point:
+            meeting_minutes['key_points_discussed'].append('Handling multiple queries at once')
+        elif 'scaling to huge datasets' in point:
+            meeting_minutes['key_points_discussed'].append('Scaling to huge datasets')
+    
+    return meeting_minutes
+
+def generate_task_list(context):
+    task_list = {
+        'actionable_items': [],
+        'follow_up_tasks': []
+    }
+    
+    for point in context['context'].split('\n'):
+        if 'Create a hands-on lab' in point:
+            task_list['actionable_items'].append({
+                'assignee': 'Drew',
+                'deadline': 'Next episode',
+                'task': 'Create a hands-on lab for similarity search in ChromaDB'
+            })
+        elif 'Provide additional resources' in point:
+            task_list['action
